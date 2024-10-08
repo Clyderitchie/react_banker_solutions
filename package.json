@@ -1,0 +1,26 @@
+{
+  "name": "react_banker_solutions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm run dev\"",
+    "build": "cd client && npm run build",
+    "render-build": "npm install && npm run build",
+    "install": "cd server && npm i && cd ../client && npm i"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "concurrently": "^9.0.1",
+    "date-fns": "^4.1.0",
+    "express": "^4.21.0",
+    "react-router": "^6.26.2"
+  }
+}
